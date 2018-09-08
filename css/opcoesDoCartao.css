@@ -24,6 +24,19 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	text-indent: -99999px;
+
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s;
+
+}
+
+.cartao.cartao--focado .opcoesDoCartao-opcao,
+.cartao:focus .opcoesDoCartao-opcao,
+.cartao:hover .opcoesDoCartao-opcao {
+	cursor: pointer;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .opcoesDoCartao-opcao:first-child {
