@@ -1,0 +1,29 @@
+{
+  "name": "ceep",
+  "version": "1.0.0",
+  "description": "gerenciadro de lembretes",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel src --out-dir dist --copy-files --presets @babel/preset-env --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessametonini/web7724.git"
+  },
+  "author": "vanessa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanessametonini/web7724/issues"
+  },
+  "homepage": "https://github.com/vanessametonini/web7724#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "jquery": "^3.3.1"
+  }
+}

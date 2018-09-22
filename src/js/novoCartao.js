@@ -1,12 +1,12 @@
 ;(function(){
-    'use cartao'
+    
+    'use strict'
+    
     let numeroCartao = 0;
-
+    
     window.adicionaCartaoNoMural = function (objetoCartao) {    
 
-        const novoCartao = document.createElement('article'),
-              listaCartoes = document.querySelectorAll('.cartao')
-             // numeroCartao = `${listaCartoes.length + 1}`;
+        const novoCartao = document.createElement('article')
     
         novoCartao.innerHTML = `
                 <div class="opcoesDoCartao">
@@ -86,14 +86,17 @@
             //seleciona o input que tiver o mesmo value da cor passada por parametro
             let input = novoCartao.querySelector(`[value='${objetoCartao.cor}']`);
     
-            //após encontrar o input com aquela cor, checa ele
-            input.checked = true;
+            if(input){
+                //após encontrar o input com aquela cor, checa ele
+                input.checked = true;
+            }
         }
     
         const mural = document.querySelector('.mural');
     
         mural.insertAdjacentElement('afterbegin', novoCartao);
-
+    
         numeroCartao++
     }
+
 })()
